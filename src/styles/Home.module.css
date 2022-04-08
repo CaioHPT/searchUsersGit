@@ -1,0 +1,149 @@
+.container {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+
+
+.container svg{
+  font-size: 12rem;
+}
+
+
+.container h5{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.form input{
+  border-radius: 8px;
+  margin: 15px 0px;
+  border: none;
+  padding: 10px;
+  transition: all .3s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form input:focus{
+  outline: none;
+}
+
+.form input[type=text]{
+  width: 25%;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.form input[type=text]:focus{
+  box-shadow: 0px 0px 10px 1px #dfe6e67c;
+}
+
+.form input[type=submit]{
+  width: 15%;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #DFE6E6;
+}
+
+.form input[type=submit]:hover{
+  cursor: pointer;
+  width: 16.5%;
+}
+
+@media(max-width: 1450px){
+  .form{
+    width: 100%;
+  }
+}
+
+@media(max-width: 1000px){
+  .form{
+    width: 100%;
+  }
+  .form input[type=text]{
+    width: 35%;
+  }
+  
+  .form input[type=submit]{
+    width: 25%;
+  }
+  .form input[type=submit]:hover{
+    width: 26.5%;
+  }  
+}
+
+@media(max-width: 750px){
+  .form{
+    width: 100%;
+  }
+  .form input[type=text]{
+    width: 45%;
+  }
+  
+  .form input[type=submit]{
+    width: 35%;
+  }
+  .form input[type=submit]:hover{
+    width: 36.5%;
+  }  
+}
+
+@media(max-width: 600px){
+  .form{
+    width: 100%;
+  }
+  .form input[type=text]{
+    width: 55%;
+  }
+  
+  .form input[type=submit]{
+    width: 45%;
+  }
+  .form input[type=submit]:hover{
+    width: 46.5%;
+  }  
+}
+
+@media(max-width: 600px){
+  .form{
+    width: 100%;
+  }
+  .form input[type=text]{
+    width: 75%;
+  }
+  
+  .form input[type=submit]{
+    width: 65%;
+  }
+  .form input[type=submit]:hover{
+    width: 66.5%;
+  }  
+}
+
+@media(max-width: 400px){
+  .form{
+    width: 100%;
+  }
+  .form input[type=text]{
+    width: 90%;
+  }
+  
+  .form input[type=submit]{
+    width: 80%;
+  }
+  .form input[type=submit]:hover{
+    width: 81.5%;
+  }  
+}

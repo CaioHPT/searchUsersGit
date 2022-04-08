@@ -1,0 +1,102 @@
+.loading, .container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to top, rgb(20, 20, 20), rgba(44, 43, 43, 0.726));
+    text-align: center;
+    padding: 5px;
+}
+
+
+.container h1{
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: #f7f8f8;
+    background-image: -webkit-linear-gradient(to top, #f7f8f8, #acbb78);
+    background-image: linear-gradient(to top, #f7f8f8, #acbb78); 
+}
+
+
+.image{
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 10px 1px #acbb783a;
+}
+
+
+.button{
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(187, 42, 42);
+    border-radius: 8px;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 12%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+    cursor: pointer;
+    width: 13%;
+}
+
+.button svg{
+    margin: 0px 10px;
+    font-size: 24px;
+}
+
+.container span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container p{
+    font-size: 18px
+}
+
+@media(max-width: 1200px){
+    .button{
+        width: 20%;
+    }
+    .button:hover{
+        width: 21%;
+    }
+}
+
+@media(max-width: 720px){
+    .button{
+        width: 30%;
+    }
+    .button:hover{
+        width: 31%;
+    }
+    .image{
+        width: 200px;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 450px){
+    .button{
+        width: 50%;
+    }
+    .button:hover{
+        width: 51%;
+    }
+}
