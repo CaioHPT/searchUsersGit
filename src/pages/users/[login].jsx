@@ -1,5 +1,5 @@
 import Image from "next/image"
-import React, { useState } from 'react'
+import React, { useId, useState } from 'react'
 import Link from "next/link";
 import { useRouter } from "next/router"
 import { BsBoxArrowLeft } from "react-icons/bs";
@@ -54,6 +54,7 @@ export default function User({ user }) {
                     <h1>{user.login}</h1>
                     <span>{user.name}</span>
                     <p>{user.bio}</p>
+                    <a href={user.html_url}>{user.html_url}</a>
                     <Link href="/">
                         <button className={styles.button}><BsBoxArrowLeft /> Voltar</button>
                     </Link>

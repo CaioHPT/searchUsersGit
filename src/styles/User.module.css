@@ -23,6 +23,17 @@
 }
 
 
+.container a{
+    transition: all .3s ease-in-out;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container a:hover{
+    font-size: 17px;
+    text-align: center;
+}
+
 .image{
     width: 300px;
     border-radius: 50%;
